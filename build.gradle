@@ -7,7 +7,7 @@ plugins {
 
 group 'ch.bbcag'
 version '1.0-SNAPSHOT'
-mainClassName = 'layouts.teil1.Launcher'
+mainClassName = 'Launcher'
 
 repositories {
     mavenCentral()

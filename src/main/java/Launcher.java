@@ -1,5 +1,3 @@
-package layouts.teil1;
-
 import javafx.application.Application;
 
 public class Launcher {

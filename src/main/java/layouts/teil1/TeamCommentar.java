@@ -8,6 +8,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
@@ -42,18 +44,15 @@ public class TeamCommentar {
         Text title = new Text("Vorname Nachname");
         title.setFont(Font.font("Berlin Sans FB", 20));
 
-        TextField textField = new TextField();
+        TextArea textArea = new TextArea();
 
-        BorderPane borderPane1 = new BorderPane();
-        borderPane1.setLeft(treeView);
+        VBox vBox = new VBox(10);
+        vBox.getChildren().addAll(title, textArea, hBoxbutton);
 
-        BorderPane borderPane2 = new BorderPane();
-        borderPane2.setTop(title);
-        borderPane2.setCenter(textField);
-        borderPane2.setBottom(hBoxbutton);
+        VBox.setVgrow(textArea, Priority.ALWAYS);
 
         HBox hBox = new HBox(10);
-        hBox.getChildren().addAll(borderPane1, borderPane2);
+        hBox.getChildren().addAll(treeView, vBox);
         hBox.setPadding(new Insets( 20, 10, 10, 0));
 
         Scene scene = new Scene(hBox);
