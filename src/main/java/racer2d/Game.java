@@ -3,6 +3,7 @@ package racer2d;
 import javafx.animation.Animation;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
+import javafx.geometry.BoundingBox;
 import javafx.scene.CacheHint;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -121,8 +122,6 @@ public class Game extends Application {
         if(tree2y > canvasheight) {
             tree2y = (random.nextInt(600) + 100) * -1;
         }
-
-
 
         paint();
     }
