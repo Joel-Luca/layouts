@@ -23,7 +23,6 @@ public class Game extends Application {
     private Image carImage;
 
     private Image treeImage;
-    private Image yellow;
 
     private double x = 350;
     private double y = 450;
@@ -78,7 +77,6 @@ public class Game extends Application {
     public void load() {
         carImage = new Image(getClass().getResourceAsStream("/game/car_blue.png"));
         treeImage = new Image(getClass().getResourceAsStream("/game/tree_small.png"));
-        yellow = new Image(getClass().getResourceAsStream("/game/arrow_yellow.png"));
     }
 
     public void paint() {
