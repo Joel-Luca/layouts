@@ -7,7 +7,7 @@ plugins {
 
 group 'ch.bbcag'
 version '1.0-SNAPSHOT'
-mainClassName = 'Launcher'
+mainClassName = 'racer2d.Game'
 
 repositories {
     mavenCentral()
